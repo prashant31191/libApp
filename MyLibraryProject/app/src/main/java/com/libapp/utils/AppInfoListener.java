@@ -6,6 +6,6 @@ package com.libapp.utils;
 
 public interface AppInfoListener {
 
-    void callbackAdvertisingId(String advertisingId);
-    void callbackMacAdressId(String macAdressId);
+    void onSuccess(SucessModel sucessModel);
+    void onFailure(ErrorModel errorModel);
 }

@@ -9,5 +9,5 @@ import android.os.Bundle;
 public interface QBEntityCallback<T> {
     void onSuccess(T var1, Bundle var2);
 
-    void onError(QBResponseException var1);
+    void onError(Exception var1);
 }

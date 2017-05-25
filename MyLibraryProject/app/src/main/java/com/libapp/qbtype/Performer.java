@@ -7,7 +7,7 @@ package com.libapp.qbtype;
 public interface Performer<T> extends QBCancelable {
     void performAsync(QBEntityCallback<T> var1);
 
-    T perform() throws QBResponseException;
+    T perform() throws Exception;
 
     <R> R convertTo(PerformProcessor<?> var1);
 

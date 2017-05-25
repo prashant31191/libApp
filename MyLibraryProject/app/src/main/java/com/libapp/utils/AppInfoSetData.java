@@ -1,5 +1,7 @@
 package com.libapp.utils;
 
+import android.location.Location;
+
 /**
  * Created by prashant.patel on 5/24/2017.
  */
@@ -9,6 +11,7 @@ public class AppInfoSetData
 
     String advertisingId="";
     String macAdressId="";
+    Location location;
 
     public AppInfoSetData(AppInfoListener appInfoListener)
     {
@@ -31,6 +34,13 @@ public class AppInfoSetData
         return macAdressId;
     }
 
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
 
     /*
     public void setAppInfoListener(AppInfoListener appInfoListener) {
